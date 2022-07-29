@@ -84,7 +84,7 @@
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos hic praesentium recusandae dolores odio animi deleniti officia cum itaque."
       }
     },
-    "component-text-header": {
+    "section-text-header": {
       "type": "component-text-header",
       "settings": {
         "heading-text": "Features",
@@ -94,7 +94,7 @@
   },
   "order": [
     "section-hero",
-    "component-text-header",
+    "section-text-header",
     "section-collection",
     "section-banner",
     "section-image-row",
