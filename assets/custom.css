@@ -1,0 +1,7 @@
+:root {
+    --worq-primary: #FFB6B7;
+}
+
+.accent-border {
+    border-color: var(--worq-primary);
+}

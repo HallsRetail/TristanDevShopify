@@ -1,27 +1,31 @@
 <div class="bg-white border-b border-gray-200">
   <div class="container">
     <div class="h-20 md:h-32 flex justify-center md:justify-between items-center">
-      <a
+      <div class="flex items-center">
+        <a
         href="{{ routes.root_url }}"
-        class="inline-block text-2xl lg:text-3xl font-bold"
+        class="inline-block text-2xl lg:text-3xl font-bold md:mr-6"
       >
-        {{ shop.name }}
+      <img src="https://cdn.shopify.com/s/files/1/0509/6698/6921/files/Untitled-2_e369452a-8b16-49ba-ab1f-ac5eb1178981_100x.png?v=1614059723" alt="{{ shop.name }}">
+
       </a>
 
       <div class="hidden md:block">
         {% render 'layout-menu', class: 'space-x-4' %}
       </div>
+      </div>
+      
 
       {% assign link_class = 'flex flex-col justify-center items-center text-sm text-gray-600 hover:text-black font-medium transition duration-150 p-2' %}
       {% assign icon_class = 'w-auto h-7 text-black mb-2' %}
 
-      <div class="hidden md:flex space-x-2 lg:space-x-6">
+      <div class="hidden md:flex space-x-2 lg:space-x-6 md:items-center">
+        <a href="#" class="flex items-center justify-center px-6 py-3 bg-black text-white h-min border-l-8 accent-border">Become A Vendor</a>
         <a
           href="{{ routes.search_url }}"
           class="{{ link_class }}"
         >
           {% render 'icon-search', class: icon_class %}
-          {{ 'action.search' | t }}
         </a>
 
         {% if shop.customer_accounts_enabled %}
@@ -39,7 +43,6 @@
           class="{{ link_class }} relative"
         >
           {% render 'icon-cart', class: icon_class %}
-          {{ 'action.cart' | t }}
 
           {% if cart.item_count > 0 %}
             <div class="w-5 h-5 flex justify-center items-center bg-black text-white text-xs border border-white rounded-full absolute top-0 right-0">
