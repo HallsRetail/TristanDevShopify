@@ -5,7 +5,7 @@
       "settings": {
         "headline": "Headline",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos hic praesentium recusandae dolores odio animi deleniti officia cum itaque.",
-        "button-url": "\/",
+        "button-url": "/",
         "button-text": "Button"
       }
     },
@@ -22,7 +22,7 @@
       "settings": {
         "headline": "Headline",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos hic praesentium recusandae dolores odio animi deleniti officia cum itaque.",
-        "button-url": "\/",
+        "button-url": "/",
         "button-text": "Button"
       }
     },
@@ -31,25 +31,18 @@
       "blocks": {
         "image-1": {
           "type": "image",
-          "settings": {
-          }
+          "settings": {}
         },
         "image-2": {
           "type": "image",
-          "settings": {
-          }
+          "settings": {}
         },
         "image-3": {
           "type": "image",
-          "settings": {
-          }
+          "settings": {}
         }
       },
-      "block_order": [
-        "image-1",
-        "image-2",
-        "image-3"
-      ],
+      "block_order": ["image-1", "image-2", "image-3"],
       "settings": {
         "headline": "Our store"
       }
@@ -79,11 +72,7 @@
           }
         }
       },
-      "block_order": [
-        "quote-1",
-        "quote-2",
-        "quote-3"
-      ],
+      "block_order": ["quote-1", "quote-2", "quote-3"],
       "settings": {
         "headline": "What others say about us"
       }
@@ -94,10 +83,18 @@
         "headline": "Our newsletter",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos hic praesentium recusandae dolores odio animi deleniti officia cum itaque."
       }
+    },
+    "component-text-header": {
+      "type": "component-text-header",
+      "settings": {
+        "heading-text": "Features",
+        "heading-description": "This section describes the sections that follow."
+      }
     }
   },
   "order": [
     "section-hero",
+    "component-text-header",
     "section-collection",
     "section-banner",
     "section-image-row",
